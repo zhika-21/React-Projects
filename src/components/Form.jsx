@@ -1,7 +1,7 @@
-import {GetDerivedStateFromError, FormControl,InputLabel,TextField,Select} from '@mui/material'
+import {Grid, FormControl,InputLabel,TextField,Select,MenuItem} from '@mui/material'
 
 function  Form  ()  {
-    const {formData,setForData,dispacher} =useContext(TrackerContext)
+    const {formData,setFormData,dispacher} =useContext(TrackerContext)
   return (
  <Grid container spacing={2}>
      <Grid item xs={6}>
@@ -21,7 +21,7 @@ function  Form  ()  {
          </FormControl>
      </Grid>
      <Grid item xs={12}/>
-     <Button onClick={()=>dispatcher({type:"addTransaction",payload:formData})}>Add Expense</Button>
+     <Button onClick={()=>dispacher({type:"addTransaction",payload:formData})}>Add Expense</Button>
      
 
  </Grid>

@@ -1,4 +1,5 @@
 import {Box, Card, CardHeader, CardContent,Divider} from "@mui/material"
+import Form from "./Form"
  function Tracker(){
      return(
          <Box>
@@ -8,6 +9,7 @@ import {Box, Card, CardHeader, CardContent,Divider} from "@mui/material"
                  <CardContent>
                      this is content
                  </CardContent>
+                 <Form />
              </Card>
              <Box>
              <List/>
